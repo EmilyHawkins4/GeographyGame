@@ -10,7 +10,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MAPMAPMAPMAPMAPMAP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+  />
 
 </head>
 
@@ -18,12 +20,17 @@
     
     <div id="map"></div>
     <div id="content">
-        <h1>Name the Countries!</h1>
+        <div id="headingDiv">
+            <h1>Name the Countries!</h1>
+            <button onClick="startGame()">START GAME</button>
+            <input type="text">
+        </div>
+        
     </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3FzhOZVsSuIJ8SY9iDJPBSWoZTOfLv8M&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&v=weekly"
       async
     ></script>
 </body>

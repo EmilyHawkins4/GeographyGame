@@ -1,36 +1,56 @@
 let map;
 
+var africaNum = 0;
+var asiaNum = 0;
+var europeNum = 0;
+var oceaniaNum = 0;
+var naNum = 0; 
+var saNum = 0;
+var totalNum = africaNum + asiaNum + europeNum + oceaniaNum + naNum + saNum;
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 20, lng: 0 },
     zoom: 2,
   });
-  var a = 10;
-  var total = document.createElement("div")
-  total.innerHTML = "Total Countries:  " + a + "/197";
+
+  var total = document.createElement("h2")
+  total.innerHTML = "<Strong>Total Countries:</strong>  " + totalNum + "/197";
   document.getElementById("content").appendChild(total)
 
-  var africa = document.createElement("div")
-  africa.innerHTML = "Africa:  " + a + "/197";
+  var africa = document.createElement("h2")
+  africa.innerHTML = "<strong>Africa:</strong>  " + africaNum + "/54";
   document.getElementById("content").appendChild(africa)
 
-  var asia = document.createElement("div")
-  asia.innerHTML = "Asia:  " + a + "/197";
+  var asia = document.createElement("h2")
+  asia.innerHTML = "<strong>Asia:</strong>  " + asiaNum + "/48";
   document.getElementById("content").appendChild(asia)
 
-  var europe = document.createElement("div")
-  europe.innerHTML = "Europe:  " + a + "/197";
+  var europe = document.createElement("h2")
+  europe.innerHTML = "<strong>Europe:</strong>  " + europeNum + "/46";
   document.getElementById("content").appendChild(europe)
 
-  var oceania = document.createElement("div")
-  oceania.innerHTML = "Oceania:  " + a + "/197";
+  var oceania = document.createElement("h2")
+  oceania.innerHTML = "<strong>Oceania:</strong>  " + oceaniaNum + "/14";
   document.getElementById("content").appendChild(oceania)
 
-  var northAmerica = document.createElement("div")
-  northAmerica.innerHTML = "North America:  " + a + "/197";
+  var northAmerica = document.createElement("h2")
+  northAmerica.innerHTML = "<strong>North America:</strong>  " + naNum + "/23";
   document.getElementById("content").appendChild(northAmerica)
 
-  var southAmerica = document.createElement("div")
-  southAmerica.innerHTML = "South America:  " + a + "/197";
+  var southAmerica = document.createElement("h2")
+  southAmerica.innerHTML = "<strong>South America:</strong>  " + saNum + "/12";
   document.getElementById("content").appendChild(southAmerica)
+
+  if(totalNum ==197){
+    alert("you win!");
+  }
+}
+
+function startGame(){
+    alert("the game has started!");
+
+    if(totalNum == 197){
+        alert("game over: you win!");
+    }
 }

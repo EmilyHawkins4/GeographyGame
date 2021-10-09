@@ -1,5 +1,3 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
 #map { 
   position: fixed;
   width: 65%;
@@ -16,8 +14,14 @@ body {
       
 #content{
   position: relative;
-  width: 33%;
+  width: 35%;
   float: right;
   height: 100%;
+  padding: 20px;
+}
+
+#headingDiv {
+  text-align: center;
+  padding: 10px;
 }
      
