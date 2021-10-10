@@ -14,6 +14,19 @@ function initMap() {
     zoom: 2,
   });
 
+  map.data.loadGeoJson('countries.geojson');
+
+  var customStyled = [
+    {
+    featureType: "all",
+    elementType: "labels",
+    stylers: [
+    { visibility: "off" }
+    ]
+    }
+    ];
+    map.set('styles',customStyled);   
+
   var total = document.createElement("h2")
   total.innerHTML = "<Strong>Total Countries:</strong>  " + totalNum + "/197";
   document.getElementById("content").appendChild(total)
@@ -42,13 +55,13 @@ function initMap() {
   southAmerica.innerHTML = "<strong>South America:</strong>  " + saNum + "/12";
   document.getElementById("content").appendChild(southAmerica)
 
-  if(totalNum ==197){
-    alert("you win!");
-  }
 }
 
 function startGame(){
     alert("the game has started!");
+
+    var countryInput = document.getElementById("countryInput").value;
+    console.log("this is the thing: "+countryInput);
 
     if(totalNum == 197){
         alert("game over: you win!");
