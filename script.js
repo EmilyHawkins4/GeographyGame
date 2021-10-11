@@ -9,12 +9,18 @@ var saNum = 0;
 var totalNum = africaNum + asiaNum + europeNum + oceaniaNum + naNum + saNum;
 
 function initMap() {
+
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 20, lng: 0 },
     zoom: 2,
   });
 
-  map.data.loadGeoJson('countries.geojson');
+  var countriesEntered = ['afghanistan', 'andorra', 'iraq', 'angola', 'argentina', 'australia', 'bulgaria', 'bolivia', "canada", "cuba", "spain", "cape verde"];
+  countriesEntered.push('armenia');
+
+  for(i=0;i<countriesEntered.length; i++){
+    map.data.loadGeoJson('countries/'+countriesEntered[i]+'.geojson');
+  }
 
   var customStyled = [
     {
