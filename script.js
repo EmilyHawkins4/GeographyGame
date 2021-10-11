@@ -15,8 +15,7 @@ function initMap() {
     zoom: 2,
   });
 
-  var countriesEntered = ['afghanistan', 'andorra', 'iraq', 'angola', 'argentina', 'australia', 'bulgaria', 'bolivia', "canada", "cuba", "spain", "cape verde"];
-  countriesEntered.push('armenia');
+  var countriesEntered = ["china", "united states of america", "zambia", "eritrea", "norway", "nauru", "kiribati", "peru", "guyana", "hungary"];
 
   for(i=0;i<countriesEntered.length; i++){
     map.data.loadGeoJson('countries/'+countriesEntered[i]+'.geojson');
