@@ -29,9 +29,7 @@ function initMap() {
     elementType: "labels",
     stylers: [
     { visibility: "off" }
-    ]
-    }
-    ];
+    ]}];
     map.set('styles',customStyled);
 
   //display totals
@@ -75,6 +73,19 @@ function checkInput(){
       if(userstuff==countryArray[i]){
         document.getElementById("stuff").value = null;
         map.data.loadGeoJson('countries/'+userstuff+'.geojson');
+        console.log("countries/"+userstuff+".geojson");
       }
     }
+
 }
+
+/*
+PROBLEMS I SHOULD BE FIXING
+  - Same Name Countries
+  - make counter work
+  - shouldn't input same country twice
+  - make geojsons pink <<<< HIGHEST PRIORITY
+  - add a timer
+  - daily leaderboard?
+
+*/
