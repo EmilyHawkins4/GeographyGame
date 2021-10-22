@@ -6,7 +6,7 @@ var europeNum = 0;
 var oceaniaNum = 0;
 var naNum = 0; 
 var saNum = 0;
-var totalNum = africaNum + asiaNum + europeNum + oceaniaNum + naNum + saNum;
+var totalNum = 0;
 
 // array of entered countries
 var countriesEntered = [];
@@ -73,19 +73,28 @@ function checkInput(){
       if(userstuff==countryArray[i]){
         document.getElementById("stuff").value = null;
         map.data.loadGeoJson('countries/'+userstuff+'.geojson');
+        map.data.setStyle({
+          fillColor: "#fc0352",
+          strokeColor: "#fc0352"
+        });
         console.log("countries/"+userstuff+".geojson");
+        totalNum++;
       }
     }
+  
 
 }
 
 /*
 PROBLEMS I SHOULD BE FIXING
-  - Same Name Countries
-  - make counter work
-  - shouldn't input same country twice
-  - make geojsons pink <<<< HIGHEST PRIORITY
-  - add a timer
-  - daily leaderboard?
+  - same name countries <<<< PRIORITY 6
+      - Dominican Republic
+      - Nigeria
+      - Guniea Bissau
+  - make counter work <<<< PRIORITY 4
+  - make geo jsons dissapear not reveal
+  - start button to reveal input field <<<< PRIORITY 2
+  - shouldn't input same country twice <<<< PRIORITY 5
+  - add a timer <<<< PRIORITY 3
 
 */
