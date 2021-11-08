@@ -5,6 +5,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
+    <script src="timer.js"></script>
 
     <!--other stuff-->
     <meta charset="UTF-8">
@@ -21,15 +22,30 @@
     <div id="content">
         <div id="headingDiv">
             <h1>Name the Countries!</h1>
+            <button onclick="startGame(); this.style.visibility= 'hidden';">Start Game</button>
+            <div id="inputGoesHere"></div>
             <input type="text" id="stuff" onInput="checkInput(this);" spellcheck="true">
-            
+            <div id="timer">
+                <form name="form_main">
+                    <div>
+                      <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+                    </div>
+                  
+                    <br />
+                  
+                    <button type="button" name="start">start</button>
+                    <button type="button" name="stop">stop</button>
+                  </form>
+            </div>
+            <div id=countryCounts></div>
+            <div id="endGameDiv"></div>
         </div>
         
     </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
       async
     ></script>
 </body>
