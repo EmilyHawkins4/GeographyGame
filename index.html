@@ -6,13 +6,19 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
     <script src="countryCount.js" defer></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!--other stuff-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAPMAPMAPMAPMAPMAP</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -21,11 +27,11 @@
     <div id="map"></div>
     <div id="content">
         <div id="headingDiv">
-            <h1>Name the Countries!</h1>
+            <h1>NAME THE COUNTRIES!</h1>
             <div>
               <h2><span id="minutes"></span>:<span id="seconds"></span></h2>
             </div>
-            <button onclick="startGame(); this.style.visibility= 'hidden';">Start Game</button>
+            <button onclick="startGame(); this.style.visibility= 'hidden';" class="button"><span>START!</span></button>
             <div id="inputGoesHere"></div>
             <div id=countryCounts></div>
             <div id="endGameDiv"></div>
@@ -35,7 +41,7 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
       async
     ></script>
 </body>
