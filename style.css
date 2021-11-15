@@ -14,10 +14,18 @@ body {
       
 #content{
   position: fixed;
-  /*width: 35%;*/
+  border-radius: 25px;
+  width: 300px;
+  height: 500px;
   float: right;
   height: 100%;
+  background-color: white;
   padding: 20px;
+  margin: 30px;
+  margin-top: 75px;
+  opacity: 0.75;
+  border: 2px solid black;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,6 +59,7 @@ input[type=text], select {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  
 }
 
 .button span {
