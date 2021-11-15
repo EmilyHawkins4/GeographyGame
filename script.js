@@ -13,7 +13,6 @@ function initMap() {
     center: { lat: 20, lng: 0 },
     zoom: 2.5,
   });
-  console.log(CountryMap.get(andorra));
 
   // no labels
   var customStyled = [
@@ -41,6 +40,10 @@ function checkInput(){
         strokeColor: "#fc0352"
       });
       totalNum++;
+      console.log(totalNum);
+      if(totalNum==197){
+        alert("you win!");
+      }
     }
   }
 }
@@ -48,7 +51,7 @@ function checkInput(){
 // called onclick, opens input field
 function startGame() {
   var inputDiv = document.createElement("div");
-  inputDiv.innerHTML="<input type='text' id='stuff' spellcheck='true' oninput='checkInput()' autofocus>"
+  inputDiv.innerHTML="<input type='text' id='stuff' spellcheck='true' oninput='checkInput()' >"
   inputDiv.id="inputDiv"
   document.getElementById("inputGoesHere").appendChild(inputDiv);
   console.log(document.getElementById("inputDiv"));
@@ -65,7 +68,7 @@ function startGame() {
 /*
 PROBLEMS I SHOULD BE FIXING
   - make counter work
-  - make timer work
+  - make timer stop
   - shouldn't input same country twice
   - same name countries:
       - Dominican Republic > Dominica
