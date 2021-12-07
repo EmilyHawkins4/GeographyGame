@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
-      
+    
 #content{
   position: fixed;
   border-radius: 25px;
@@ -27,7 +27,9 @@ body {
   border: 2px solid black;
   box-sizing: border-box;
 }
-
+#countryCounts{
+  text-align: center;
+}
 body {
   font-family: 'Spartan', sans-serif;
 }
@@ -62,6 +64,7 @@ input[type=text], select {
   
 }
 
+/* STYLING BUTTONS */
 .button span {
   cursor: pointer;
   display: inline-block;
