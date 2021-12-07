@@ -47,7 +47,7 @@ input[type=text], select {
 }
      
 .button {
-  display: inline-block;
+  /*display: inline-block;*/
   border-radius: 4px;
   background-color:black;
   border: none;
