@@ -1,91 +1,101 @@
-#map { 
-  position: fixed;
-  width: 100%;
-  float: left;
-  height: 100%;
-}
-      
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-    
-#content{
-  position: fixed;
-  border-radius: 25px;
-  width: 300px;
-  height: 500px;
-  float: right;
-  height: 100%;
-  background-color: white;
-  padding: 20px;
-  margin: 30px;
-  margin-top: 75px;
-  opacity: 0.75;
-  border: 2px solid black;
-  box-sizing: border-box;
-}
-#countryCounts{
-  text-align: center;
-}
-body {
-  font-family: 'Spartan', sans-serif;
-}
+/* MAP STYLING */
+  #map { 
+    position: fixed;
+   width: 100%;
+    float: left;
+    height: 100%;
+  }     
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-#headingDiv {
-  text-align: center;
-  padding: 10px;
-}
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-     
-.button {
-  /*display: inline-block;*/
-  border-radius: 4px;
-  background-color:black;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 15px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  
-}
+/* STYLING HTML */
+  #content{
+    position: fixed;
+    border-radius: 25px;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin: 30px;
+    margin-top: 55px;
+    opacity: 0.75;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+  #giveUp{
+    margin-left: 500px;
+    position: fixed;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 75px;
+    opacity: 0.75;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #countryCounts{
+    text-align: center;
+  }
+  body {
+    font-family: 'Spartan', sans-serif;
+  }
+
+  #headingDiv {
+    text-align: center;
+    padding: 10px;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 /* STYLING BUTTONS */
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+  .button {
+    border-radius: 4px;
+    background-color:black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  .button:hover span:after {
+   opacity: 1;
+    right: 0;
+  }
+  #button2 {
+    width: 150px;
+    font-size: 17px;
+  }
