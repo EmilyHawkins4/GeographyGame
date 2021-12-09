@@ -16,7 +16,7 @@
   #content{
     position: fixed;
     border-radius: 25px;
-    width: 300px;
+    width: 20%;
     background-color: white;
     padding: 10px;
     margin: 30px;
@@ -30,14 +30,12 @@
     position: fixed;
     border-radius: 25px;
     background-color: white;
-    padding: 20px;
-    margin: 30px;
-    margin-top: 75px;
+    padding: 20px; 
+    margin-top: 41%; /* TODO: Fix this number*/
+    margin-left: 84%; /* TODO: Fix this number*/
     opacity: 0.75;
     border: 2px solid black;
     box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
   }
   #countryCounts{
     text-align: center;
@@ -96,6 +94,22 @@
     right: 0;
   }
   #button2 {
-    width: 150px;
+    border-radius: 4px;
+    padding: 15px;
+    background-color:black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
+    font-size: 17px;
+  }
+  #button2:hover {
+    border-radius: 4px;
+    padding: 15px;
+    background-color:rgb(59, 59, 59);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
     font-size: 17px;
   }
