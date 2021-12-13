@@ -45,7 +45,6 @@ function startGame() {
   var buttonText = document.createElement("span");
   giveUpButton.innerHTML= "Give Up!"
   giveUpButton.appendChild(buttonText);
-  //giveUpButton.onclick = "makeButton()";
   giveUpButton.onclick = function moveWindow(){location.href='lose.html';};
   giveUpButton.id ="giveUpButton";
   document.getElementById("buttonGoesHere").appendChild(giveUpButton);
@@ -101,11 +100,6 @@ function checkInput(){
 
     }
   }
-}
-
-// move user after give up
-function moveWindow(){
-  location.href='lose.html';
 }
 
 // updates the country counts based on continent
