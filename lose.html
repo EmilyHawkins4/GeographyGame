@@ -12,7 +12,6 @@
     
     <!-- connect js & css-->
     <link rel="stylesheet" href="winlose.css">
-    <script src="confetti.js"></script>
     <script src="winlose.js"></script>
     
     <!-- fonts -->
@@ -30,29 +29,9 @@
     <!-- display html -->
     <div id="content">
         <h1>NICE TRY!</h1>
+        <p>study the map and try again!</p>
         <button onclick="location.href='/'" this.style.visibility= 'hidden' class="button"><span>Play Again!</span></button>
     </div>
-
-    <!-- confetti -->
-    <script>
-
-        // start confetti
-        const start = () => {
-                setTimeout(function() {
-                    confetti.start()
-                }, 100); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-            };
-
-        // stop confetti
-        const stop = () => {
-            setTimeout(function() {
-                confetti.stop()
-            }, 30000);
-        };
-
-        start();
-        stop();
-    </script>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script

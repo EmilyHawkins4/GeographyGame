@@ -44,9 +44,10 @@ function startGame() {
   var giveUpButton = document.createElement("button");
   var buttonText = document.createElement("span");
   giveUpButton.innerHTML= "Give Up!"
-  giveUpButton.appendChild(buttonText);// TODO: Make this button work!
-  //giveUpButton.onclick = makeButton();
-  giveUpButton.id = "button2";
+  giveUpButton.appendChild(buttonText);
+  //giveUpButton.onclick = "makeButton()";
+  giveUpButton.onclick = function moveWindow(){location.href='lose.html';};
+  giveUpButton.id ="giveUpButton";
   document.getElementById("buttonGoesHere").appendChild(giveUpButton);
   
   // start timer
@@ -103,7 +104,7 @@ function checkInput(){
 }
 
 // move user after give up
-function makeButton(){
+function moveWindow(){
   location.href='lose.html';
 }
 

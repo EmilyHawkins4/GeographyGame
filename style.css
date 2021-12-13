@@ -93,7 +93,7 @@
    opacity: 1;
     right: 0;
   }
-  #button2 {
+  #giveUpButton {
     border-radius: 4px;
     padding: 15px;
     background-color:black;
@@ -103,7 +103,7 @@
     width: 100px;
     font-size: 17px;
   }
-  #button2:hover {
+  #giveUpButton:hover {
     border-radius: 4px;
     padding: 15px;
     background-color:rgb(59, 59, 59);
