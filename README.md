@@ -1,6 +1,6 @@
 # tuvalu
 
-Emily Hawkins 
+**Emily Hawkins** 
 
 December 8th 2021
 
@@ -11,8 +11,8 @@ Geography "Name the Countries" game
 
 1. Input your Google Maps API key in the "APIKEYHERE" spaces
       1. **index.html** line 65
-      2. **win.html** line 58
-      3. **lose.html** line 59
+      2. **win.html** line 62
+      3. **lose.html** line 42
 
 ## Acknowledgements:
 
