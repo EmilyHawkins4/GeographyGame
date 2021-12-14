@@ -45,18 +45,18 @@ function startGame() {
   var buttonText = document.createElement("span");
   giveUpButton.innerHTML= "Give Up!"
   giveUpButton.appendChild(buttonText);
-  giveUpButton.onclick = function moveWindow(){location.href='lose.html';};
+  giveUpButton.onclick = function moveWindow(){location.href='/html/lose.html';};
   giveUpButton.id ="giveUpButton";
   document.getElementById("buttonGoesHere").appendChild(giveUpButton);
   
   // start timer
-  var sec = 0;
-  function pad (val) { 
+  var second = 0;
+  function timer (val) { 
     return val > 9 ? val : "0" + val; 
   }
   setInterval(function(){
-    document.getElementById("seconds").innerHTML=pad(++sec%60);
-    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+    document.getElementById("seconds").innerHTML=timer(++second%60);
+    document.getElementById("minutes").innerHTML=timer(parseInt(second/60,10));
   }, 1000);
   
 }
@@ -79,7 +79,7 @@ function checkInput(){
       console.log("countryarray: " + countryArray);
 
       // add geojson to the map
-      map.data.loadGeoJson('countries/'+userInput+'.geojson');
+      map.data.loadGeoJson('/countries/'+userInput+'.geojson');
       map.data.setStyle({
         fillColor: "#fc0352",
         strokeColor: "#fc0352"
@@ -113,6 +113,13 @@ function updateCountryCount(country){
       });
     }
 
+    // update africa count
+    if(continent=="F"){
+      $('#afCount').text( function(i, oldval) {
+        return ++oldval;
+      });
+    }
+
     // update north america count
     if(continent=="N"){
       $('#naCount').text( function(i, oldval) {
@@ -141,16 +148,10 @@ function updateCountryCount(country){
       });
     }
 
-    // update africa count
-    if(continent=="F"){
-      $('#afCount').text( function(i, oldval) {
-        return ++oldval;
-      });
-    }
 }
 
 // partner countries
-  // guinea & guinea bissau
-  // niger and nigeria
-  // dominica & dominican republic
+  // guinea & guinea --> bissau
+  // niger & niger --> ia
+  // dominica & dominica --> n republic
 

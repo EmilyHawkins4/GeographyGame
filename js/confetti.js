@@ -1,4 +1,4 @@
-// this page makes the confetti go!
+// this page makes the confetti display!
 
 var confetti = {
 	maxCount: 150,		//set max confetti count
