@@ -8,13 +8,6 @@ December 8th 2021
 
 Geography "Name the Countries" game
 
-## Usage:
-
-1. Input your Google Maps API key in the "APIKEYHERE" spaces
-      1. **index.html** line 65
-      2. **win.html** line 42
-      3. **lose.html** line 62
-
 ## Acknowledgements:
 
 1. Used Google Maps API. [link](https://developers.google.com/maps)
