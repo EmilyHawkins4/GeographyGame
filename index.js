@@ -79,7 +79,7 @@ function checkInput(){
       console.log("countryarray: " + countryArray);
 
       // add geojson to the map
-      map.data.loadGeoJson('/countries/'+userInput+'.geojson');
+      map.data.loadGeoJson('countries/'+userInput+'.geojson');
       map.data.setStyle({
         fillColor: "#fc0352",
         strokeColor: "#fc0352"
