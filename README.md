@@ -12,4 +12,4 @@ Geography "Name the Countries" game
 
 1. Used Google Maps API. [link](https://developers.google.com/maps)
 2. Used confetti.js Library. [link](https://www.cssscript.com/confetti-falling-animation/)
-3. Used GeoJsons from DataHub. [link](https://datahub.io/core/geo-countries)
+3. Used GeoJSONs from DataHub. [link](https://datahub.io/core/geo-countries)
