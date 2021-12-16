@@ -12,7 +12,7 @@ Geography "Name the Countries" game
 
 Enter all 197 countries to win!
 
-Play the game! [link](https://emilyhawkinss.com)
+Play the game: [link](https://emilyhawkinss.com)
 
 ## Tech Stack
 
