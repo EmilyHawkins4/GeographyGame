@@ -1,4 +1,4 @@
-# tuvalu
+# Geography Game
 
 **Emily Hawkins**
 
