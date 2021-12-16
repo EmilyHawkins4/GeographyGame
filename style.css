@@ -31,8 +31,8 @@
     border-radius: 25px;
     background-color: white;
     padding: 20px; 
-    margin-top: 41%; /* TODO: Fix this number*/
-    margin-left: 84%; /* TODO: Fix this number*/
+    margin-top: 41%;
+    margin-left: 84%;
     opacity: 0.75;
     border: 2px solid black;
     box-sizing: border-box;

@@ -16,8 +16,8 @@
 /* STYLING HTML */
   #content{
     width: 40%;
-    margin: 19%; /* TODO: fix numbers */
-    margin-left:27%; /* TODO: fix numbers */
+    margin: 19%;
+    margin-left:27%;
     border: 4px solid black;
     border-radius: 25px;
     padding: 10px;
