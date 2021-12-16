@@ -14,6 +14,13 @@ Enter all 197 countries to win!
 
 Play the game: [link](https://emilyhawkinss.com)
 
+## Usage
+
+Input your Google Maps JavaScript API Key on the following lines:
+1. index.html 65
+2. lose.html 42
+3. win.html 62
+
 ## Tech Stack
 
 1. JavaScript
