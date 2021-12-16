@@ -1,5 +1,5 @@
 {
-  "name": "tuvalu",
+  "name": "GeographyGame",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmilyHawkins4/tuvalu.git"
+    "url": "git+https://github.com/EmilyHawkins4/GeographyGame.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EmilyHawkins4/tuvalu/issues"
+    "url": "https://github.com/EmilyHawkins4/GeographyGame/issues"
   },
-  "homepage": "https://github.com/EmilyHawkins4/tuvalu#readme",
+  "homepage": "https://github.com/EmilyHawkins4/GeographyGame#readme",
   "dependencies": {
     "dotenv": "^10.0.0"
   }
