@@ -35,7 +35,7 @@ function startGame() {
   
   // display input box
   var inputDiv = document.createElement("div");
-  inputDiv.innerHTML="<input type='text' id='stuff' spellcheck='true' oninput='checkInput()' >"
+  inputDiv.innerHTML="<input type='text' id='stuff' spellcheck='true' oninput='callCheckInputFromHTML()' >"
   inputDiv.id="inputDiv"
   document.getElementById("inputGoesHere").appendChild(inputDiv);
   console.log(document.getElementById("inputDiv"));
@@ -45,7 +45,9 @@ function startGame() {
   var buttonText = document.createElement("span");
   giveUpButton.innerHTML= "Give Up!"
   giveUpButton.appendChild(buttonText);
-  giveUpButton.onclick = function moveWindow(){location.href='lose.html';};
+  giveUpButton.onclick = function moveWindow(){
+     location.href='lose.html';
+    };
   giveUpButton.id ="giveUpButton";
   document.getElementById("buttonGoesHere").appendChild(giveUpButton);
   
@@ -61,11 +63,16 @@ function startGame() {
   
 }
 
-// called oninput
-function checkInput(){
+function callCheckInputFromHTML(){
+  lowercaseWord = document.getElementById("stuff").value.toLowerCase()
+  console.log("loweorcase word: " + lowercaseWord);
+  countryGuessed = spellCheck(lowercaseWord);
+  console.log("spellcheckedword: " + countryGuessed);
+  checkInput(countryGuessed);
+}
 
-  // gets user input from input box
-  var userInput = document.getElementById("stuff").value.toLowerCase();
+// called oninput
+function checkInput(userInput){
   
   // checks if the input is correct
   for(i=0; i<countryArray.length; i++){
@@ -80,11 +87,14 @@ function checkInput(){
 
       // add geojson to the map
       map.data.loadGeoJson('countries/'+userInput+'.geojson');
-      map.data.setStyle({
-        fillColor: "#fc0352",
-        strokeColor: "#fc0352"
-      });
+        if(userInput=="ukraine"){
+          map.data.setStyle({
+            fillColor: "#fffb1c",
+            strokeColor: "#1c7bff"
+          });
+        }
       
+
       // update counts
       $('#totalCount').text( function(i, oldval) {
         return ++oldval;
@@ -150,8 +160,70 @@ function updateCountryCount(country){
 
 }
 
-// partner countries
-  // guinea & guinea --> bissau
-  // niger & niger --> ia
-  // dominica & dominica --> n republic
+function spellCheck(word){
+  if(word =="usa" || word =="the united states" || word =="america"){
+    word = "united states";
+  }
+  if(word == "czech republic"){
+    word = "czechia";
+  }
+  if(word == "burma"){
+    word = "myanmar";
+  }
+  if(word == "cabo verde"){
+    word = "cape verde";
+  }
+  if(word == "east timor"){
+    word = "timor leste";
+  }
+  if(word == "holland"){
+    word = "netherlands";
+  }
+  if(word == "swaziland"){
+    word = "eswatini";
+  }
+  if(word == "drc" || word == "zaire"){
+    word = "democratic republic of the congo";
+  }
+  if(word == "car"){
+    word = "central african republic";
+  }
+  if(word == "rep of the congo" || word == "congo"){
+    word = "republic of the congo";
+  }
+  if(word == "saint lucia" || word =="st. lucia"){
+    word = "st lucia";
+  }
+  if(word == "saint kitts and nevis" ||word == "st. kitts and nevis"){
+    word = "st lucia";
+  }
+  if(word == "saint vincent" ||word == "st. vincent"){
+    word = "st vincent";
+  }
+  if(word == "cote d'ivoire"){
+    word = "ivory coast";
+  }
+  if(word == "uk"){
+    word = "united kingdom";
+  }
 
+  return word;
+}
+// improvements
+      // take away geoJsons (reverse process)
+      // show unentered countries after give up
+      // on hover display country name
+      // figure out a way to accept multiple spellings (spellcheck function?)
+            // ivory coast --> cote de'ivore
+            // czech republic --> czechia
+            // myanmar --> burma
+            // cape verde --> cabo verde
+            // timor leste --> east timior
+            // netherlands --> holland
+            // eswatini --> swaziland
+            // DRC --> Zaire --> Democratic republic of the congo
+            // Rep of Congo --> Congo
+            // Sts --> Saints
+            // United States --> USA --> The United States
+            // Central African Republic --> CAR
+      // add countries' territories
