@@ -213,7 +213,7 @@ function spellCheck(word){
       // take away geoJsons (reverse process)
       // show unentered countries after give up
       // on hover display country name
-      // figure out a way to accept multiple spellings (spellcheck function?)
+      // \\ // \\ figure out a way to accept multiple spellings (spellcheck function?)
             // ivory coast --> cote de'ivore
             // czech republic --> czechia
             // myanmar --> burma
@@ -221,9 +221,8 @@ function spellCheck(word){
             // timor leste --> east timior
             // netherlands --> holland
             // eswatini --> swaziland
-            // DRC --> Zaire --> Democratic republic of the congo
+            // Zaire --> Democratic republic of the congo
             // Rep of Congo --> Congo
             // Sts --> Saints
-            // United States --> USA --> The United States
-            // Central African Republic --> CAR
-      // add countries' territories
+            // United States --> The United States
+      // \\ // \\ add countries' territories
