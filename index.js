@@ -28,6 +28,13 @@ function initMap() {
     ]}];
     map.set('styles',customStyled);
 
+    // show name on hover
+    // Set mouseover event for each feature.
+    map.data.addListener('mouseover', function(event) {
+      document.getElementById('info-box').textContent =
+        event.feature.getProperty('ADMIN');
+    });
+
 }
 
 // called onclick, starts the game 
@@ -222,7 +229,7 @@ function spellCheck(word){
             // netherlands --> holland
             // eswatini --> swaziland
             // Zaire --> Democratic republic of the congo
-            // Rep of Congo --> Congo
+            // Republic of the Congo --> Congo --> rep of the congo
             // Sts --> Saints
             // United States --> The United States
       // \\ // \\ add countries' territories

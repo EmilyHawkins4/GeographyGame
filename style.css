@@ -113,3 +113,18 @@
     width: 100px;
     font-size: 17px;
   }
+
+  #info-box{
+    margin-left: 500px;
+    position: fixed;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px; 
+    margin-top: 5%;
+    margin-left: 87%;
+    opacity: 0.75;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 175px;
+    text-align: center;
+  }
