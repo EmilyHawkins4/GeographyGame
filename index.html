@@ -37,7 +37,7 @@
     <!-- page title -->
     <div id="headingDiv">
       <h1>COUNTRIES</h1>
-      <h2><span id="minutes"></span>:<span id="seconds"></span></h2>
+      <h2><span id="minutes">00</span>:<span id="seconds">00</span></h2>
       <button onclick="startGame(); this.style.visibility= 'hidden';" class="button"><span>START!</span></button>
     </div>
 
@@ -63,7 +63,7 @@
   </div>
 
   <!-- box identifying the country hovered over -->
-  <div id="info-box"></div>
+  <div id="info-box">country identifier</div>
 
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh1tE_OYR23SY7QtgvR7LMHvvjFDjRHow&callback=initMap&v=weekly" async>
