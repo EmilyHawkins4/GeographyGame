@@ -94,14 +94,7 @@ function checkInput(userInput){
 
       // add geojson to the map
       map.data.loadGeoJson('countries/'+userInput+'.geojson');
-        if(userInput=="ukraine"){
-          map.data.setStyle({
-            fillColor: "#fffb1c",
-            strokeColor: "#1c7bff"
-          });
-        }
       
-
       // update counts
       $('#totalCount').text( function(i, oldval) {
         return ++oldval;
