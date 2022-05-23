@@ -13,7 +13,7 @@
   }
 
 /* STYLING HTML */
-  #content{
+  .content{
     position: fixed;
     border-radius: 25px;
     width: 20%;
@@ -24,6 +24,14 @@
     opacity: 0.75;
     border: 2px solid black;
     box-sizing: border-box;
+  }
+
+  #content2{
+    margin-top: 10%;
+    margin-left: 30%;
+    height: 30%;
+    width: 40%;
+    text-align: center;
   }
   #giveUp{
     margin-left: 500px;
@@ -44,7 +52,7 @@
     font-family: 'Spartan', sans-serif;
   }
 
-  #headingDiv {
+  #heading {
     text-align: center;
     padding: 10px;
   }
@@ -93,7 +101,7 @@
    opacity: 1;
     right: 0;
   }
-  #giveUpButton {
+  .giveUpButton {
     border-radius: 4px;
     padding: 15px;
     background-color:black;
@@ -103,7 +111,10 @@
     width: 100px;
     font-size: 17px;
   }
-  #giveUpButton:hover {
+  #thisisabutton{
+    width: 40%;
+  }
+  .giveUpButton:hover {
     border-radius: 4px;
     padding: 15px;
     background-color:rgb(59, 59, 59);

@@ -13,7 +13,7 @@
   <!-- connect js & css -->
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="index.js"></script>
-  <script src="countries.js"></script>
+  <script src="confetti.js"></script>
 
   <!--google maps api -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -32,17 +32,17 @@
   <div id="map"></div>
 
   <!-- input section -->
-  <div id="content">
+  <div id="content" class="content">
 
     <!-- page title -->
-    <div id="headingDiv">
+    <div id="heading">
       <h1>COUNTRIES</h1>
       <h2><span id="minutes">00</span>:<span id="seconds">00</span></h2>
       <button onclick="startGame(); this.style.visibility= 'hidden';" class="button"><span>START!</span></button>
     </div>
 
     <!-- input box -->
-    <div id="inputGoesHere"></div>
+    <div id="inputBox"></div>
 
     <!-- display number of countries entered -->
     <div id=countryCounts>
@@ -57,12 +57,14 @@
         
   </div>
 
+  <div id="winlose"></div>
+
   <!-- give up button -->
   <div id="giveUp">
-      <div id="buttonGoesHere"></div>
+      <div id="buttonGiveup"></div>
   </div>
 
-  <!-- box identifying the country hovered over -->
+  <!-- box identifying the country hovered over --> <!-- eventually phase out -->
   <div id="info-box">country identifier</div>
 
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->

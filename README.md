@@ -17,9 +17,7 @@ Enter all 197 countries to win!
 ## Usage
 
 Input your Google Maps JavaScript API Key on the following lines:
-1. index.html 65
-2. lose.html 42
-3. win.html 62
+1. index.html 70
 
 ## Tech Stack
 
