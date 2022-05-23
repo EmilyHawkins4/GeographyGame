@@ -3,23 +3,19 @@
 
 <head>
 
-  <!--page setup-->
   <link rel="icon" type="image/x-icon" href="https://m.media-amazon.com/images/I/41CyuoxrPvL._AC_.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Name the Countries!</title>
   <meta charset="UTF-8">
   
-  <!-- connect js & css -->
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="index.js"></script>
   <script src="confetti.js"></script>
 
-  <!--google maps api -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
@@ -28,23 +24,18 @@
 
 <body>
     
-  <!-- map goes here -->
   <div id="map"></div>
 
-  <!-- input section -->
   <div id="content" class="content">
 
-    <!-- page title -->
     <div id="heading">
       <h1>COUNTRIES</h1>
       <h2><span id="minutes">00</span>:<span id="seconds">00</span></h2>
       <button onclick="startGame(); this.style.visibility= 'hidden';" class="button"><span>START!</span></button>
     </div>
 
-    <!-- input box -->
     <div id="inputBox"></div>
 
-    <!-- display number of countries entered -->
     <div id=countryCounts>
       <h2>Total Countries <span id="totalCount">0</span>/197</h2>
       <h3>Africa: <span id="afCount">0</span>/54</h3>
@@ -59,15 +50,6 @@
 
   <div id="winlose"></div>
 
-  <!-- give up button -->
-  <div id="giveUp">
-      <div id="buttonGiveup"></div>
-  </div>
-
-  <!-- box identifying the country hovered over --> <!-- eventually phase out -->
-  <div id="info-box">country identifier</div>
-
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh1tE_OYR23SY7QtgvR7LMHvvjFDjRHow&callback=initMap&v=weekly" async>
   </script>
 
