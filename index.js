@@ -42,16 +42,41 @@ function initMap() {
       infowindow.open(map);
     });
 
-}
+    var heading = document.createElement("div")
+    heading.id = "heading";
+    document.getElementById("content").appendChild(heading);
+    var title = document.createElement("h1")
+    title.innerHTML = "Name The Countries!";
+    document.getElementById("heading").appendChild(title);
+    var clock =  document.createElement("h2");
+    clock.innerHTML = "<span id='minutes'>00</span>:<span id='seconds'>00</span>"
+    document.getElementById("heading").appendChild(clock);
+    var startButton = document.createElement("button")
+    startButton.innerHTML = "<span>START!</span>"
+    startButton.className = "button"
+    startButton.id = "startButton"
+    startButton.onclick = function start(){
+      startGame();
+    }
+    document.getElementById("heading").appendChild(startButton);
+
+    var continents = document.createElement("div")
+    continents.id = "countryCounts"
+    continents.innerHTML = "<h2>Total Countries <span id='totalCount'>0</span>/197</h2><h3>Africa: <span id='afCount'>0</span>/54</h3><h3>Asia: <span id='asCount'>0</span>/48</h3><h3>Europe: <span id='euCount'>0</span>/46</h3><h3>Oceania: <span id='ocCount'>0</span>/14</h3><h3>North America: <span id='naCount'>0</span>/23</h3><h3>South America: <span id='saCount'>0</span>/12</h3>"
+    document.getElementById("content").appendChild(continents);
+
+  }
 
 // called onclick, starts the game 
 function startGame() {
+
+  document.querySelector('#startButton').remove();
   
   // display input box
   let inputDiv = document.createElement("div");
   inputDiv.innerHTML="<input type='text' id='stuff' spellcheck='true' oninput='checkInput()' >"
   inputDiv.id="inputDiv"
-  document.getElementById("inputBox").appendChild(inputDiv);
+  document.getElementById("heading").appendChild(inputDiv);
 
   // display give up button
   let giveup = document.createElement("div");
