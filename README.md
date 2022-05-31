@@ -10,14 +10,14 @@ Geography "Name the Countries" game
 
 ## How to play
 
-Enter all 197 countries to win!
+Enter all 197 countries to win
 
 [Play the game!](https://emilyhawkinss.com)
 
 ## Usage
 
 Input your Google Maps JavaScript API Key on the following lines:
-1. index.html 70
+1. index.html 33
 
 ## Tech Stack
 
@@ -29,6 +29,6 @@ Input your Google Maps JavaScript API Key on the following lines:
 
 ## Acknowledgements
 
-1. [Used Google Maps API.](https://developers.google.com/maps)
-2. [Used confetti.js Library.](https://www.cssscript.com/confetti-falling-animation/)
-3. [Used GeoJSONs from DataHub.](https://datahub.io/core/geo-countries)
+1. [Google Maps API.](https://developers.google.com/maps)
+2. [confetti.js Library.](https://www.cssscript.com/confetti-falling-animation/)
+3. [GeoJSONs from DataHub.](https://datahub.io/core/geo-countries)
