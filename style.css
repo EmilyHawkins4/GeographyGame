@@ -81,7 +81,6 @@
   .button span:after {
     content: '\00bb';
     position: absolute;
-    opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
@@ -90,7 +89,6 @@
     padding-right: 25px;
   }
   .button:hover span:after {
-   opacity: 1;
     right: 0;
   }
   .giveUpButton {
@@ -104,7 +102,7 @@
     font-size: 17px;
   }
   #thisisabutton{
-    width: 40%;
+    width: 30%;
   }
   .giveUpButton:hover {
     border-radius: 4px;
@@ -117,28 +115,15 @@
     font-size: 17px;
   }
 
-  #info-box{
-    margin-left: 500px;
-    position: fixed;
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px; 
-    margin-top: 5%;
-    margin-left: 87%;
-    opacity: 0.75;
-    border: 2px solid black;
-    box-sizing: border-box;
-    width: 175px;
-    text-align: center;
-  }
   @media (max-width: 767px) {
       body, h2, span{
         font-size: 16px;
       }
       #content{
-        width: 100%;
+        width: 96%;
         height: 35%;
-        bottom: 0;
+        margin-top: 90%;
+        margin-bottom: 2%;
         margin-left: 2%;
         margin-right: 2%;
         clear: both;
@@ -149,6 +134,11 @@
       }
       h1{
         font-size: 21px;
+      }
+      #giveup{
+        width: 20%;
+        height: 20%;
+        margin-right: 80%;
       }
       /*.button {
         width: 20%;
