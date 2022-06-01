@@ -62,7 +62,7 @@ function initMap() {
 
     var continents = document.createElement("div")
     continents.id = "countryCounts"
-    continents.innerHTML = "<h2>Total Countries <span id='totalCount'>0</span>/197</h2><h3>Africa: <span id='afCount'>0</span>/54</h3><h3>Asia: <span id='asCount'>0</span>/48</h3><h3>Europe: <span id='euCount'>0</span>/46</h3><h3>Oceania: <span id='ocCount'>0</span>/14</h3><h3>North America: <span id='naCount'>0</span>/23</h3><h3>South America: <span id='saCount'>0</span>/12</h3>"
+    continents.innerHTML = "<h2>Total Countries <span id='totalCount'>0</span>/197</h2><div id='continents'><h3>Africa: <span id='afCount'>0</span>/54</h3><h3>Asia: <span id='asCount'>0</span>/48</h3><h3>Europe: <span id='euCount'>0</span>/46</h3><h3>Oceania: <span id='ocCount'>0</span>/14</h3><h3>North America: <span id='naCount'>0</span>/23</h3><h3>South America: <span id='saCount'>0</span>/12</h3></div>"
     document.getElementById("content").appendChild(continents);
 
   }
