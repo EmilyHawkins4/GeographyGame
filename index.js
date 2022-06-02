@@ -19,6 +19,7 @@ function initMap() {
   // make map
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 20, lng: 0 },
+    disableDefaultUI: true,
     zoom: 2.5,
   });
 
@@ -46,7 +47,7 @@ function initMap() {
     heading.id = "heading";
     document.getElementById("content").appendChild(heading);
     var title = document.createElement("h1")
-    title.innerHTML = "Name The Countries!";
+    title.innerHTML = "NAME THE COUNTRIES";
     document.getElementById("heading").appendChild(title);
     var clock =  document.createElement("h2");
     clock.innerHTML = "<span id='minutes'>00</span>:<span id='seconds'>00</span>"
