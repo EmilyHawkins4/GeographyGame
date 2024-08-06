@@ -2,23 +2,27 @@
 <html lang="en">
 
 <head>
-
+  <script src="js/index.js"></script>
+  <script src="js/bundle.js"></script>
   <link rel="icon" type="image/x-icon" href="https://m.media-amazon.com/images/I/41CyuoxrPvL._AC_.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Name the Countries!</title>
+  <title>Name the Countries</title>
   <meta charset="UTF-8">
   
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="index.js"></script>
-  <script src="confetti.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="js/confetti.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
 </head>
 
@@ -26,9 +30,11 @@
     
   <div id="map"></div>
 
-  <div id="content" class="content"></div>
+  <div id="content" class="content text-center"></div>
 
   <div id="winlose"></div>
+
+  
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh1tE_OYR23SY7QtgvR7LMHvvjFDjRHow&callback=initMap&v=weekly" async>
   </script>
